@@ -12,11 +12,11 @@ The agent combines:
 
 Output: a Market Research Report covering the top target companies with tailored recommendations and business rationale.
 
-A sample output from a complete run is included in this repo: [`Market_Research_Report(2).md`](./Market_Research_Report(2).md).
+A sample output from a complete run is included in this repo: [`Market_Research_Report.md`](./Market_Research_Report.md).
 
 ## 2. Setup & Execution Instructions
 
-1. Open `Sales_Intelligence_Agent_Final.ipynb` in Google Colab.
+1. Open `Sales_Intelligence_Agent.ipynb` in Google Colab.
 2. Run cells top to bottom.
 3. When prompted, enter:
    - A **Groq API key** (free) — https://console.groq.com/keys
@@ -25,7 +25,7 @@ A sample output from a complete run is included in this repo: [`Market_Research_
 5. The notebook will:
    - Parse and chunk the handbook, and build sentence-embedding vectors for retrieval.
    - Loop through the seed company list, generating a profile and a solution recommendation for each.
-   - Assemble a full Market Research Report (`Market_Research_Report(2).md`) and trigger a download.
+   - Assemble a full Market Research Report (`Market_Research_Report.md`) and trigger a download.
 
 No API keys are hardcoded anywhere in the notebook — they are entered securely at runtime via `getpass`.
 
@@ -73,7 +73,7 @@ flowchart TD
 
 ## 5. Sample Output
 
-A full end-to-end run is included at [`Market_Research_Report(2).md`](./Market_Research_Report(2).md), containing:
+A full end-to-end run is included at [`Market_Research_Report.md`](./Market_Research_Report.md), containing:
 - An executive market overview of the Indian automotive industry
 - Company profiles and solution recommendations for major Indian OEMs, Tier-1 suppliers, and component manufacturers, each justified against the XYZ Product & Solutions Handbook
 - A closing Business Recommendations section covering solution prioritization and outreach sequencing
